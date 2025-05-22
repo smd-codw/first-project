@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moodfy - Meditation Sounds</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #ccf7cd;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      background-color: #a8d5ba;
+      padding: 15px 30px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Center container */
+    .content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 70px); /* Account for navbar height */
+    }
+
+    .container {
+      background-image: url('fg.jpg'); /* Your image file */
+      background-size: cover;
+      background-position: center;
+      border-radius: 12px;
+      width: 80%;
+      max-width: 1000px;
+      height: 80vh;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 40px;
+      position: relative;
+    }
+
+    .sound-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 32px;
+      backdrop-filter: brightness(0.6);
+    }
+
+    .slider {
+      width: 100px;
+      margin-top: 10px;
+    }
+
+    .play-button {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: none;
+      border: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- ✅ Navbar now inside body and styled correctly -->
+  <div class="navbar">
+    <div class="logo">Moodfy</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="meditation.html">Meditation</a>
+      <a href="#">Depression Test</a>
+      <a href="awareness.html">Awareness</a>
+    </div>
+  </div>
+
+  <!-- ✅ Centered content wrapper below navbar -->
+  <div class="content-wrapper">
+    <div class="container">
+      <button class="play-button">▶</button>
+
+      <div class="sound-box"><div>🌧️</div><input class="slider" type="range" min="0" max="100" /></div>
+      <div class="sound-box"><div>⚡</div><input class="slider" type="range" min="0" max="100" /></div>
+      <div class="sound-box"><div>🏠</div><input class="slider" type="range" min="0" max="100" /></div>
+      <div class="sound-box"><div>❌</div><input class="slider" type="range" min="0" max="100" /></div>
+      <div class="sound-box"><div>🔥</div><input class="slider" type="range" min="0" max="100" /></div>
+      <div class="sound-box"><div>🌊</div><input class="slider" type="range" min="0" max="100" /></div>
+      <div class="sound-box"><div>💨</div><input class="slider" type="range" min="0" max="100" /></div>
+      <div class="sound-box"><div>🌙</div><input class="slider" type="range" min="0" max="100" /></div>
+    </div>
+  </div>
+</body>
+</html>
